@@ -1,0 +1,5 @@
+logs/
+daily_summaries/
+__pycache__/
+*.pyc
+.terminal_state

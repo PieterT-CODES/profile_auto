@@ -1,0 +1,20 @@
+#!/bin/bash
+# Git post-commit hook - spustí sa automaticky po každom "git commit"
+# Ukladá info o commite do denného logu
+
+LOG_DIR="$HOME/profile_auto/logs"
+TODAY=$(date +%Y-%m-%d)
+LOG_FILE="$LOG_DIR/git-${TODAY}.jsonl"
+
+# Získame info o poslednom commite
+COMMIT_HASH=$(git rev-parse HEAD)
+COMMIT_MSG=$(git log -1 --pretty=%B | tr '\n' ' ' | sed 's/"/\\"/g')
+BRANCH=$(git branch --show-current)
+REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+TIMESTAMP=$(date -Iseconds)
+
+# Zoznam zmenených súborov (oddelené čiarkou)
+CHANGED_FILES=$(git diff-tree --no-commit-id -r --name-only HEAD | tr '\n' ',' | sed 's/,$//')
+
+# Zapíšeme do logu ako JSON riadok
+echo "{\"timestamp\": \"${TIMESTAMP}\", \"type\": \"git_commit\", \"repo\": \"${REPO_NAME}\", \"branch\": \"${BRANCH}\", \"commit_hash\": \"${COMMIT_HASH:0:7}\", \"message\": \"${COMMIT_MSG}\", \"changed_files\": \"${CHANGED_FILES}\"}" >> "$LOG_FILE"
