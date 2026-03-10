@@ -88,6 +88,6 @@ python3 ~/profile_auto/scripts/aggregator.py
 python3 ~/profile_auto/scripts/llm_summarizer.py
 ```
 <div align="center">
-<img src="https://github.com/PieterT-CODES/profile_auto.git" alt="License">
-Copyright © 2026 Peter Tomašovič (PieterT-CODES). Focus: data scraping & AI.
+  <img src="https://github-readme-stats.vercel.app/api?username=PieterT-CODES&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&bg_color=0f0f0f&title_color=FFD700&icon_color=58A6FF">
+  <br>🤝 MIT | © 2026 Peter Tomašovič<br><small>Contribute to data scraping & AI automation</small>
 </div>
