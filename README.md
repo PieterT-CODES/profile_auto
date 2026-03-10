@@ -88,6 +88,6 @@ python3 ~/profile_auto/scripts/aggregator.py
 python3 ~/profile_auto/scripts/llm_summarizer.py
 ```
 <div align="center">
-<img src="https://img.shields.io/github/license/PieterT-CODES/tvoj-repo?color=blue&style=flat-square" alt="License">
+<img src="https://github.com/PieterT-CODES/profile_auto.git" alt="License">
 Copyright © 2026 Peter Tomašovič (PieterT-CODES). Focus: data scraping & AI.
 </div>
