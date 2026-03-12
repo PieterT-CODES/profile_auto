@@ -125,7 +125,9 @@ If this project helped you:
 [![Support](https://img.shields.io/badge/☕_buy_me_dinner-support-black?style=for-the-badge)](https://ko-fi.com/pietertcodes)
 
 ## License
-MIT — free to use, modify, and distribute.
+# Copyright (c) 2026 Peter Tomašovič
+# Licensed under MIT License
+...
 
 ## Author
 Built by [Peter Tomašovič](https://github.com/PieterT-CODES). Contributions to data collection and AI automation are welcome.
