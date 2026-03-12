@@ -118,6 +118,12 @@ Confirm your API key is correct and that the WakaTime extension has synced at le
 **Git hook not running**
 Check that `core.hooksPath` is set globally: `git config --global core.hooksPath` should return `~/profile_auto/git-hooks`.
 
+## Support
+
+If this project helped you:
+
+[![Support](https://img.shields.io/badge/☕_buy_me_dinner-support-black?style=for-the-badge)](https://ko-fi.com/pietertcodes)
+
 ## License
 MIT — free to use, modify, and distribute.
 
